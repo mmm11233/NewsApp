@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mmm11233/package.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "56e549349a8ef256ea59ae37401271ec3e3b086b"
+      }
+    }
+  ],
+  "version" : 2
+}

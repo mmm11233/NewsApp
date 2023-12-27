@@ -11,6 +11,10 @@
 		392B9AF82B3C14EE0011E493 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B9AF72B3C14EE0011E493 /* ContentView.swift */; };
 		392B9AFA2B3C14EF0011E493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392B9AF92B3C14EF0011E493 /* Assets.xcassets */; };
 		392B9AFD2B3C14EF0011E493 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392B9AFC2B3C14EF0011E493 /* Preview Assets.xcassets */; };
+		392B9B052B3C238E0011E493 /* NetSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 392B9B042B3C238E0011E493 /* NetSwift */; };
+		392B9B092B3C241C0011E493 /* TeslaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B9B082B3C241C0011E493 /* TeslaModel.swift */; };
+		392B9B0C2B3C2F820011E493 /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B9B0B2B3C2F820011E493 /* ProductManager.swift */; };
+		392B9B0F2B3C90DE0011E493 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B9B0E2B3C90DE0011E493 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		392B9AF72B3C14EE0011E493 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		392B9AF92B3C14EF0011E493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		392B9AFC2B3C14EF0011E493 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		392B9B082B3C241C0011E493 /* TeslaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaModel.swift; sourceTree = "<group>"; };
+		392B9B0B2B3C2F820011E493 /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
+		392B9B0E2B3C90DE0011E493 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392B9B052B3C238E0011E493 /* NetSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +59,10 @@
 		392B9AF42B3C14EE0011E493 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
-				392B9AF52B3C14EE0011E493 /* NewsAppApp.swift */,
+				392B9B0D2B3C90CF0011E493 /* Components */,
+				392B9B0A2B3C2F430011E493 /* Managers */,
+				392B9B062B3C239B0011E493 /* App */,
+				392B9B072B3C23A30011E493 /* Model */,
 				392B9AF72B3C14EE0011E493 /* ContentView.swift */,
 				392B9AF92B3C14EF0011E493 /* Assets.xcassets */,
 				392B9AFB2B3C14EF0011E493 /* Preview Content */,
@@ -65,6 +76,38 @@
 				392B9AFC2B3C14EF0011E493 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		392B9B062B3C239B0011E493 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				392B9AF52B3C14EE0011E493 /* NewsAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		392B9B072B3C23A30011E493 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				392B9B082B3C241C0011E493 /* TeslaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		392B9B0A2B3C2F430011E493 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				392B9B0B2B3C2F820011E493 /* ProductManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		392B9B0D2B3C90CF0011E493 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				392B9B0E2B3C90DE0011E493 /* SwiftUIView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +126,9 @@
 			dependencies = (
 			);
 			name = NewsApp;
+			packageProductDependencies = (
+				392B9B042B3C238E0011E493 /* NetSwift */,
+			);
 			productName = NewsApp;
 			productReference = 392B9AF22B3C14EE0011E493 /* NewsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +157,9 @@
 				Base,
 			);
 			mainGroup = 392B9AE92B3C14EE0011E493;
+			packageReferences = (
+				392B9B032B3C238E0011E493 /* XCRemoteSwiftPackageReference "package" */,
+			);
 			productRefGroup = 392B9AF32B3C14EE0011E493 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +188,9 @@
 			files = (
 				392B9AF82B3C14EE0011E493 /* ContentView.swift in Sources */,
 				392B9AF62B3C14EE0011E493 /* NewsAppApp.swift in Sources */,
+				392B9B092B3C241C0011E493 /* TeslaModel.swift in Sources */,
+				392B9B0C2B3C2F820011E493 /* ProductManager.swift in Sources */,
+				392B9B0F2B3C90DE0011E493 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +394,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		392B9B032B3C238E0011E493 /* XCRemoteSwiftPackageReference "package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mmm11233/package.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		392B9B042B3C238E0011E493 /* NetSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 392B9B032B3C238E0011E493 /* XCRemoteSwiftPackageReference "package" */;
+			productName = NetSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 392B9AEA2B3C14EE0011E493 /* Project object */;
 }
